@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body onload="pageRenderCompleted()">
+    <div class="flex-container">
+        <div class="inner-card">
+            <textarea name="" id="review-card" class="info" cols="20" rows="4"
+                placeholder="Please leaves us a review"></textarea>
+            <div class="rating">
+                <span class="fa fa-star grab"></span>
+                <span class="fa fa-star grab"></span>
+                <span class="fa fa-star grab"></span>
+                <span class="fa fa-star grab"></span>
+                <span class="fa fa-star grab"></span>
+            </div>
+
+            <button class="btn-Add-review" onclick="addReviewHandler()">Add Review</button>
+
+            <br>
+
+        </div>
+    </div>
+
+
+    <div>
+        <input type="number" name="" id="search-value" placeholder="Search by rating 1 to 5">
+
+        <button onclick="searchByRating()">Search</button>
+        <div style="display:flex;justify-content:center;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>review</th>
+                        <td>rating</td>
+                    </tr>
+                </thead>
+                <tbody id="review-container">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="./App.js"></script>
+
+</html>

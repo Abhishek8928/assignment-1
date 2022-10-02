@@ -1,0 +1,18 @@
+
+
+
+body{
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+    margin:2% 10%;
+}
+.rating{
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.flex-container{
+    margin:40px 0px;
+}
+.star-checked{
+    color:goldenrod;
+}
